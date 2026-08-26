@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Escuela Visceral | Bachillerato y Carreras Técnicas</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Escuela Visceral | Bachillerato y 35 Carreras Técnicas en Bogotá</title>
+<meta name="description" content="Escuela Visceral: bachillerato virtual o presencial y carreras técnicas de 1 año, certificadas ante el MEN y homologables a universidad. Inscríbete en Bogotá, Colombia." />
 </head>
 <body>
-  <noscript>
+
+<noscript>
 <div class="vh-noscript">Este sitio funciona mejor con JavaScript activado, pero el bachillerato, las 35 carreras técnicas y el formulario de inscripción siguen siendo visibles y usables sin él.</div>
 </noscript>
 
@@ -22,17 +24,12 @@ html{scroll-behavior:smooth;}
   columns:auto !important; float:none !important; -webkit-columns:auto !important;
 }
 .vh-home{
-  font-family:'Inter',sans-serif;color:#1c2b24;line-height:1.65;position:relative;font-size:1.08rem;
-  --esmeralda:#009B68; --esmeralda-oscuro:#075A3D; --verde-sello:#075A3D;
-  --neon-esmeralda:#00D99A; --ink:#071A12;
-  --dorado-oscuro:#9A6A16; --dorado:#C89A2E; --dorado-claro:#F1D477;
-  --naranja:#F56A00; --naranja-claro:#FF8A24;
-  --crema:#F4F7F3; --blanco:#ffffff; --texto-suave:#4b5f54; --borde:#e2e8e4;
-  --crema-t:rgba(244,247,243,.78); --blanco-t:rgba(255,255,255,.72);
-  --verde-t:rgba(7,26,18,.88);
-  width:100vw!important;max-width:100vw!important;
-  margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;
-  overflow-x:clip;
+  font-family:'Inter',sans-serif;color:#1c2b24;line-height:1.6;position:relative;
+  --esmeralda:#0b6e4f; --esmeralda-oscuro:#054d37; --verde-sello:#14301f;
+  --dorado:#b8912e; --dorado-claro:#f0e2bd;
+  --crema:#faf8f3; --blanco:#ffffff; --texto-suave:#55645c; --borde:#e0e6e1;
+  --crema-t:rgba(250,248,243,.72); --blanco-t:rgba(255,255,255,.68);
+  --verde-t:rgba(20,48,31,.98);
 }
 .vh-home h1,.vh-home h2,.vh-home h3{font-family:'Fraunces',serif;font-weight:700;margin:0;line-height:1.15;}
 .vh-home section{padding:5rem 1.5rem;position:relative;z-index:1;scroll-margin-top:20px;}
@@ -44,47 +41,19 @@ html{scroll-behavior:smooth;}
 .vh-wrap{max-width:1120px;margin:0 auto;}
 .vh-eyebrow{
   display:inline-block;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--dorado);border:1px solid rgba(200,154,46,.5);padding:.35rem 1rem;border-radius:100px;
+  color:var(--dorado);border:1px solid rgba(184,145,46,.5);padding:.35rem 1rem;border-radius:100px;
   margin-bottom:1.75rem;font-weight:600;
 }
 
-/* Textura tipo "cuero + microchip" reutilizable, muy liviana (SVG en
-   línea, sin imágenes externas) para fondos verdes y para el hover
-   del menú. */
-.vh-textura-chip{
-  background-image:
-    radial-gradient(circle at 20% 20%, rgba(200,154,46,.10) 0, transparent 45%),
-    radial-gradient(circle at 80% 70%, rgba(200,154,46,.08) 0, transparent 40%),
-    repeating-linear-gradient(45deg, rgba(200,154,46,.05) 0 2px, transparent 2px 14px),
-    repeating-linear-gradient(-45deg, rgba(0,155,104,.05) 0 2px, transparent 2px 14px);
-}
-
 .vh-hero{
-  background:linear-gradient(150deg,var(--verde-sello) 0%,var(--esmeralda) 55%,var(--ink) 100%);
+  background:linear-gradient(150deg,var(--verde-sello) 0%,var(--esmeralda) 65%,var(--esmeralda-oscuro) 100%);
   color:#fff; text-align:center; padding:6rem 1.5rem 5rem; position:relative; overflow:hidden;
 }
 .vh-hero::before{
   content:'';position:absolute;inset:0;
-  background:radial-gradient(ellipse 55% 55% at 75% 20%,rgba(200,154,46,.16) 0%,transparent 70%);
+  background:radial-gradient(ellipse 55% 55% at 75% 20%,rgba(184,145,46,.16) 0%,transparent 70%);
 }
 .vh-hero-inner{position:relative;max-width:780px;margin:0 auto;}
-.vh-hero-grid{position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.2fr .9fr;gap:3rem;align-items:center;text-align:left;}
-.vh-hero-grid .vh-hero-inner{max-width:none;margin:0;text-align:left;}
-.vh-hero-grid .vh-btn-row{justify-content:flex-start;}
-.vh-hero-form-card{
-  background:#fff;border-radius:18px;padding:1.9rem 1.75rem;box-shadow:0 24px 60px rgba(0,0,0,.28);
-  color:#1c2b24;text-align:left;
-}
-.vh-hero-form-card h2{color:var(--verde-sello);font-size:1.4rem;margin-bottom:.4rem;}
-.vh-hero-form-card .vh-cta-sub{color:var(--texto-suave)!important;font-weight:400!important;opacity:1!important;font-size:.92rem;margin-bottom:1.2rem!important;}
-.vh-hero-form-card .vh-form{background:none;border-radius:0;padding:0;box-shadow:none;gap:.85rem;max-width:none;}
-.vh-hero-form-card .vh-form-nota{display:none;}
-@media(max-width:980px){
-  .vh-hero-grid{grid-template-columns:1fr;gap:2.5rem;text-align:center;}
-  .vh-hero-grid .vh-hero-inner{text-align:center;}
-  .vh-hero-grid .vh-btn-row{justify-content:center;}
-  .vh-hero-form-card{max-width:520px;margin:0 auto;}
-}
 .vh-home .vh-hero h1{font-size:clamp(2.4rem,5.5vw,3.6rem);letter-spacing:-.02em;margin-bottom:1.1rem;color:#fff !important;}
 .vh-hero h1 em{font-style:italic;color:var(--dorado);}
 .vh-hero p{font-size:1.15rem;font-weight:300;color:#fff;opacity:.95;max-width:560px;margin:0 auto 2.5rem;}
@@ -94,8 +63,8 @@ html{scroll-behavior:smooth;}
   text-decoration:none;transition:transform .2s,box-shadow .2s;cursor:pointer;border:2px solid transparent;
   font-family:inherit;
 }
-.vh-btn-dorado{background:linear-gradient(135deg,var(--naranja-claro) 0%,var(--naranja) 60%,#d95700 100%);color:#fff;box-shadow:0 4px 16px rgba(245,106,0,.4);}
-.vh-btn-dorado:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(245,106,0,.55);}
+.vh-btn-dorado{background:linear-gradient(135deg,#ffcf5c 0%,#e8862c 60%,#d9691f 100%);color:var(--verde-sello);box-shadow:0 4px 16px rgba(217,105,31,.4);}
+.vh-btn-dorado:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(217,105,31,.55);}
 .vh-btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
 .vh-btn-outline:hover{background:rgba(255,255,255,.1);border-color:#fff;}
 
@@ -115,7 +84,7 @@ html{scroll-behavior:smooth;}
 }
 .vh-ruta-paso em{font-style:normal;font-weight:500;opacity:.8;font-size:.78rem;}
 .vh-ruta-icono{font-size:1rem;line-height:1;}
-.vh-ruta-paso:hover{border-color:var(--dorado);background:rgba(200,154,46,.15);}
+.vh-ruta-paso:hover{border-color:var(--dorado);background:rgba(184,145,46,.15);}
 .vh-ruta-paso.activo{background:var(--dorado);border-color:var(--dorado);color:var(--verde-sello);}
 .vh-ruta-paso.activo em{color:var(--verde-sello);opacity:.75;}
 .vh-ruta-univ{border-style:dashed;}
@@ -123,10 +92,9 @@ html{scroll-behavior:smooth;}
 .vh-ruta-tooltip.activo{opacity:1;}
 @media(max-width:600px){.vh-ruta{gap:.35rem;}.vh-ruta-paso{font-size:.78rem;padding:.55rem .9rem;}}
 
-.vh-diferenciadores{background:var(--verde-t);padding:4rem 1.5rem;}
-.vh-diferenciadores-titulo{text-align:center;color:#fff;font-size:clamp(1.8rem,3.5vw,2.5rem);max-width:820px;margin:0 auto 2.2rem;}
-.vh-pills-row{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:1020px;margin:0 auto;}
-.vh-pill{font-size:1.05rem;font-weight:700;color:var(--dorado-claro);border:1.5px solid rgba(200,154,46,.55);padding:.9rem 1.6rem;border-radius:100px;white-space:nowrap;background:rgba(200,154,46,.08);}
+.vh-diferenciadores{background:var(--verde-t);padding:2.5rem 1.5rem;}
+.vh-pills-row{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;max-width:920px;margin:0 auto;}
+.vh-pill{font-size:.82rem;font-weight:600;color:var(--dorado);border:1px solid rgba(184,145,46,.4);padding:.55rem 1.1rem;border-radius:100px;white-space:nowrap;}
 
 .vh-para-quien{background:var(--crema-t);}
 .vh-para-quien h2{text-align:center;font-size:clamp(1.7rem,3vw,2.3rem);color:var(--verde-sello);margin-bottom:.75rem;}
@@ -144,7 +112,7 @@ html{scroll-behavior:smooth;}
 .vh-comp-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem;display:block;}
 .vh-comp-col.tradicional .vh-comp-label{color:#999;}
 .vh-comp-col.visceral .vh-comp-label{color:var(--dorado);}
-.vh-flow{font-size:1.05rem;line-height:2.1;font-weight:500;}
+.vh-flow{font-size:1.02rem;line-height:2.15;font-weight:500;}
 
 .vh-proyectos{background:var(--crema-t);}
 .vh-proyectos h2{text-align:center;color:var(--verde-sello);font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:1rem;}
@@ -161,7 +129,7 @@ html{scroll-behavior:smooth;}
 .vh-bachillerato-sec h2, .vh-mundos-sec h2{text-align:center;color:var(--verde-sello);font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:.5rem;}
 .vh-mundos-kicker{text-align:center;font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dorado);font-weight:700;margin-bottom:1rem;}
 .vh-mundos-intro{text-align:center;color:var(--texto-suave);max-width:620px;margin:0 auto 1rem;font-weight:300;}
-.vh-mundos-homologa{text-align:center;max-width:640px;margin:0 auto 2.5rem;font-size:.88rem;color:var(--verde-sello);background:var(--dorado-claro);border:1px solid rgba(200,154,46,.4);border-radius:10px;padding:.9rem 1.3rem;font-weight:500;}
+.vh-mundos-homologa{text-align:center;max-width:640px;margin:0 auto 2.5rem;font-size:.88rem;color:var(--verde-sello);background:var(--dorado-claro);border:1px solid rgba(184,145,46,.4);border-radius:10px;padding:.9rem 1.3rem;font-weight:500;}
 
 .vh-ciclos-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.7rem;max-width:960px;margin:2rem auto 1.5rem;}
 .vh-ciclo-card{background:var(--blanco);border:1.5px solid var(--borde);border-radius:10px;padding:1rem .5rem;text-align:center;}
@@ -183,7 +151,7 @@ html{scroll-behavior:smooth;}
 .vh-mundo-btn .verbo{font-size:.78rem;letter-spacing:.03em;text-transform:uppercase;color:var(--texto-suave);display:block;margin-bottom:.35rem;font-weight:700;line-height:1.3;word-break:normal;white-space:normal;}
 .vh-mundo-btn .nombre{font-family:'Fraunces',serif;font-size:1.35rem;color:var(--verde-sello);font-weight:700;display:block;word-break:normal;white-space:normal;}
 .vh-mundo-btn .cuenta{font-size:.78rem;color:var(--texto-suave);margin-top:.4rem;display:block;font-weight:600;word-break:normal;white-space:normal;}
-.vh-mundo-btn:hover{border-color:var(--dorado);transform:translateY(-3px);box-shadow:0 10px 24px rgba(200,154,46,.18);}
+.vh-mundo-btn:hover{border-color:var(--dorado);transform:translateY(-3px);box-shadow:0 10px 24px rgba(184,145,46,.18);}
 .vh-mundo-btn:active{transform:translateY(-1px) scale(.98);}
 
 .vh-panel-head{display:flex;align-items:baseline;gap:.7rem;flex-wrap:wrap;margin-bottom:.5rem;}
@@ -192,11 +160,14 @@ html{scroll-behavior:smooth;}
 .vh-panel-duracion{font-size:.78rem;color:var(--esmeralda);font-weight:700;margin-bottom:1.25rem;}
 .vh-panel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem;}
 .vh-panel-grid a{display:block;width:100%;text-align:left;background:var(--blanco);border:1px solid var(--borde);border-radius:8px;padding:.85rem 1.1rem;color:#333;text-decoration:none;font-size:.92rem;transition:all .18s ease;font-family:inherit;cursor:pointer;box-sizing:border-box;}
-.vh-panel-grid a:hover{border-color:var(--dorado);color:var(--esmeralda-oscuro);transform:translateX(3px);background:#fffdf7;box-shadow:0 4px 14px rgba(200,154,46,.15);}
+.vh-panel-grid a:hover{border-color:var(--dorado);color:var(--esmeralda-oscuro);transform:translateX(3px);background:#fffdf7;box-shadow:0 4px 14px rgba(184,145,46,.15);}
 .vh-panel-grid a:active{transform:translateX(1px) scale(.99);background:var(--dorado-claro);}
 @media(max-width:520px){.vh-panel-grid{grid-template-columns:1fr;}}
 .vh-carreras-cta{text-align:center;margin-top:2rem;}
 .vh-carreras-cta p{font-size:.85rem;color:var(--texto-suave);margin-bottom:.75rem;}
+
+.vh-requisitos-titulo{text-align:center;color:var(--verde-sello);font-size:1.3rem;margin:3.5rem 0 .5rem;}
+.vh-requisitos-intro{text-align:center;color:var(--texto-suave);max-width:600px;margin:0 auto 1.75rem;font-weight:300;font-size:.95rem;}
 
 .vh-modal-sub{font-size:.82rem;color:var(--dorado);font-weight:600;letter-spacing:.02em;margin:-.3rem 0 1rem;display:block;}
 .vh-modal-desc{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--borde);}
@@ -245,12 +216,12 @@ html{scroll-behavior:smooth;}
 
 .vh-precio{background:var(--blanco-t);}
 .vh-precio-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:820px;margin:0 auto;align-items:start;}
-.vh-precio-card{max-width:460px;margin:0 auto;background:var(--blanco);border:2px solid var(--dorado);border-radius:16px;padding:3rem 2.5rem;text-align:center;box-shadow:0 10px 40px rgba(0,155,104,.1);}
+.vh-precio-card{max-width:460px;margin:0 auto;background:var(--blanco);border:2px solid var(--dorado);border-radius:16px;padding:3rem 2.5rem;text-align:center;box-shadow:0 10px 40px rgba(11,110,79,.1);}
 .vh-precio-label{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--texto-suave);margin-bottom:.75rem;}
 .vh-precio-num{font-family:'Fraunces',serif;font-weight:900;color:var(--verde-sello);display:flex;align-items:baseline;justify-content:center;gap:.4rem;white-space:nowrap;word-break:normal;overflow-wrap:normal;writing-mode:horizontal-tb!important;font-size:clamp(1.9rem,7vw,2.6rem);}
 .vh-precio-num span{font-size:.85rem;font-weight:500;color:var(--texto-suave);white-space:nowrap;}
 .vh-precio-mundos{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin:1.1rem 0 .25rem;}
-.vh-precio-mundos span{font-size:.72rem;font-weight:700;color:var(--verde-sello);background:var(--dorado-claro);border:1px solid rgba(200,154,46,.4);border-radius:100px;padding:.35rem .75rem;white-space:nowrap;}
+.vh-precio-mundos span{font-size:.72rem;font-weight:700;color:var(--verde-sello);background:var(--dorado-claro);border:1px solid rgba(184,145,46,.4);border-radius:100px;padding:.35rem .75rem;white-space:nowrap;}
 .vh-precio-incluye{text-align:left;margin:1.5rem 0;padding:0;list-style:none;font-size:.92rem;}
 .vh-precio-incluye li{padding:.5rem 0;display:flex;gap:.6rem;align-items:flex-start;}
 .vh-precio-incluye li::before{content:'✓';color:var(--esmeralda);font-weight:700;}
@@ -259,9 +230,6 @@ html{scroll-behavior:smooth;}
 .vh-admision{background:var(--crema-t);}
 .vh-admision h2{text-align:center;color:var(--verde-sello);font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:3rem;}
 .vh-pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:900px;margin:0 auto;}
-.vh-requisitos-titulo{text-align:center;color:var(--verde-sello);font-size:1.3rem;margin:3.5rem 0 .5rem;}
-.vh-requisitos-intro{text-align:center;color:var(--texto-suave);max-width:600px;margin:0 auto 1.75rem;font-weight:300;font-size:.95rem;}
-.vh-requisitos-grid{max-width:900px;}
 .vh-paso{text-align:center;background:var(--blanco);border-radius:12px;padding:1.5rem 1rem;}
 .vh-paso-num{width:48px;height:48px;border-radius:50%;background:var(--esmeralda);color:#fff;font-family:'Fraunces',serif;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.2rem;}
 .vh-paso h3{font-size:1.05rem;color:var(--verde-sello);margin-bottom:.5rem;}
@@ -271,8 +239,8 @@ html{scroll-behavior:smooth;}
 .vh-home .vh-cta-form h2{text-align:center;font-size:clamp(1.8rem,3.5vw,2.5rem);margin-bottom:.6rem;color:#fff !important;}
 .vh-home .vh-cta-form > .vh-wrap > p.vh-cta-sub{text-align:center;opacity:.92;font-weight:300;margin-bottom:2rem;color:#fff !important;}
 .vh-form{max-width:520px;margin:0 auto;background:var(--blanco);border-radius:16px;padding:2.5rem;display:grid;gap:1.1rem;}
-.vh-preseleccion{display:none;background:var(--dorado-claro);border:1px solid rgba(200,154,46,.5);border-radius:8px;padding:.75rem 1rem;font-size:.88rem;color:var(--verde-sello);font-weight:700;text-align:center;}
-@keyframes vh-pulse{0%{transform:scale(.97);box-shadow:0 0 0 0 rgba(200,154,46,.55);}70%{transform:scale(1.015);box-shadow:0 0 0 10px rgba(200,154,46,0);}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(200,154,46,0);}}
+.vh-preseleccion{display:none;background:var(--dorado-claro);border:1px solid rgba(184,145,46,.5);border-radius:8px;padding:.75rem 1rem;font-size:.88rem;color:var(--verde-sello);font-weight:700;text-align:center;}
+@keyframes vh-pulse{0%{transform:scale(.97);box-shadow:0 0 0 0 rgba(184,145,46,.55);}70%{transform:scale(1.015);box-shadow:0 0 0 10px rgba(184,145,46,0);}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(184,145,46,0);}}
 .vh-preseleccion.vh-pulse{animation:vh-pulse .6s ease-out;}
 .vh-form label{font-size:.8rem;font-weight:600;color:var(--verde-sello);margin-bottom:.35rem;display:block;}
 .vh-form input,.vh-form select,.vh-form textarea{width:100%;padding:.8rem 1rem;border:1px solid var(--borde);border-radius:8px;font-family:'Inter',sans-serif;font-size:.95rem;color:#1c2b24;}
@@ -302,7 +270,6 @@ html{scroll-behavior:smooth;}
 
 .vh-noscript{background:#fff3cd;color:#7a5b00;text-align:center;font-size:.85rem;padding:.6rem 1rem;}
 
-/* ENCABEZADO */
 .vh-topbar{background:var(--verde-sello);color:#fff;text-align:center;font-size:.78rem;padding:.5rem 1rem;}
 .vh-topbar a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;}
 .vh-topbar a:hover{color:var(--dorado-claro);}
@@ -311,77 +278,60 @@ html{scroll-behavior:smooth;}
 .vh-topbar-whatsapp{background:#25D366;padding:.28rem .8rem;border-radius:100px;font-weight:700;color:#fff!important;}
 .vh-topbar-whatsapp:hover{background:#1ebe57;color:#fff!important;}
 
-/* Encabezado: logo horizontal a la izquierda sobre fondo blanco,
-   menú a la derecha con textura "chip" sutil al pasar el cursor.
-   Estático (no sticky) para que nunca tape contenido al hacer scroll. */
 .vh-header, .vh-home .vh-header{
-  background-color:#ffffff!important;border-bottom:1px solid var(--borde);
-  padding:.85rem 1.5rem;position:relative;z-index:500;
+  background-color:#ffffff!important;
+  border-bottom:3px solid transparent;
+  border-image:linear-gradient(90deg,var(--dorado),var(--esmeralda),var(--dorado)) 1;
+  padding:1rem 1.5rem;position:relative;z-index:500;
 }
 .vh-header-inner{
-  max-width:1200px;margin:0 auto;display:flex;align-items:center;
-  justify-content:space-between;gap:1.5rem;flex-wrap:nowrap;
+  max-width:1120px;margin:0 auto;display:flex;align-items:center;
+  justify-content:space-between;gap:1.5rem;flex-wrap:wrap;row-gap:.9rem;
 }
+/* Logo horizontal sobre fondo blanco: alto fijo, ancho automático según su
+   proporción real — así el círculo/arte del logo nunca se recorta ni se
+   deforma, sea cual sea su relación de aspecto. */
 .vh-header-logo-link{
-  display:flex;align-items:center;line-height:0;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;line-height:0;flex-shrink:0;
+  background:#fff;border-radius:10px;padding:.4rem .9rem;
 }
 .vh-header-logo{
-  display:block!important;height:64px!important;width:auto!important;
-  max-width:280px!important;object-fit:contain!important;
-  transition:transform .2s ease;
+  display:block;height:64px;width:auto;max-width:100%;
+  object-fit:contain;transition:transform .25s ease,filter .25s ease;
 }
-.vh-header-logo-link:hover .vh-header-logo{transform:scale(1.04);}
+.vh-header-logo-link:hover .vh-header-logo{transform:scale(1.06);filter:drop-shadow(0 4px 12px rgba(184,145,46,.4));}
 .vh-nav{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:1.6rem;flex:1 1 auto;}
 .vh-nav-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:1.5rem;}
 .vh-nav-links a{
-  font-size:1.18rem;font-weight:700;color:var(--verde-sello)!important;text-decoration:none;
-  white-space:nowrap;position:relative;padding:.5rem .65rem;border-radius:8px;
-  transition:color .2s ease,background .25s ease,box-shadow .25s ease;
+  font-size:1.05rem;font-weight:700;color:var(--verde-sello)!important;text-decoration:none;
+  white-space:nowrap;position:relative;padding-bottom:4px;
+  transition:color .25s ease,transform .25s ease;
 }
-.vh-nav-links a::after{content:'';position:absolute;left:.5rem;right:calc(100% - .5rem);bottom:0;height:2px;background:var(--dorado);transition:right .22s ease;}
-.vh-nav-links a:hover{
-  color:var(--esmeralda-oscuro)!important;
-  background-color:rgba(200,154,46,.1);
-  background-image:
-    repeating-linear-gradient(45deg, rgba(200,154,46,.16) 0 2px, transparent 2px 8px),
-    repeating-linear-gradient(-45deg, rgba(0,155,104,.14) 0 2px, transparent 2px 8px);
-  box-shadow:inset 0 0 0 1px rgba(200,154,46,.35);
+.vh-nav-links a::after{
+  content:'';position:absolute;left:0;bottom:0;height:3px;width:100%;border-radius:2px;
+  background:linear-gradient(90deg,var(--dorado),var(--esmeralda));
+  transform:scaleX(0);transform-origin:left;transition:transform .32s ease;
 }
-.vh-nav-links a:hover::after{right:.5rem;}
-.vh-nav .vh-btn{padding:.75rem 1.7rem;font-size:1.02rem;flex-shrink:0;}
-
-/* Menú hamburguesa (solo visible en móvil) */
-.vh-burger{
-  display:none;background:none;border:2px solid var(--verde-sello);border-radius:8px;
-  width:44px;height:44px;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;
-}
-.vh-burger svg{width:22px;height:22px;color:var(--verde-sello);}
-
-@media(max-width:900px){
-  .vh-header-logo{height:46px!important;max-width:200px!important;}
-  .vh-header-inner{flex-wrap:nowrap;}
-  .vh-burger{display:flex;}
-  .vh-nav{
-    display:none;position:absolute;top:100%;left:0;right:0;background:#fff;
-    flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1.25rem;
-    border-bottom:1px solid var(--borde);box-shadow:0 12px 24px rgba(0,0,0,.08);
-  }
-  .vh-nav.vh-nav-abierto{display:flex;}
-  .vh-nav-links{flex-direction:column;align-items:stretch;gap:.15rem;width:100%;}
-  .vh-nav-links a{padding:.9rem .25rem;text-align:left;font-size:1.05rem;border-bottom:1px solid var(--borde);border-radius:0;}
-  .vh-nav-links a::after{display:none;}
-  .vh-nav .vh-btn{width:100%;text-align:center;margin-top:1rem;}
+.vh-nav-links a:hover{color:var(--esmeralda)!important;transform:translateY(-2px);}
+.vh-nav-links a:hover::after{transform:scaleX(1);}
+.vh-nav .vh-btn{padding:.7rem 1.6rem;font-size:.92rem;flex-shrink:0;}
+@media(max-width:820px){
+  .vh-header{padding:.85rem 1.25rem;}
+  .vh-header-logo{height:48px;}
+  .vh-header-inner{justify-content:center;text-align:center;}
+  .vh-nav{justify-content:center;}
+  .vh-nav-links{justify-content:center;gap:1rem;}
+  .vh-nav-links a{font-size:.92rem;}
 }
 
-/* PIE DE PÁGINA */
 .vh-footer{background:var(--verde-sello);color:rgba(255,255,255,.85);padding:3rem 1.5rem 2rem;}
 .vh-footer-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem;}
 .vh-footer h3{color:#fff;font-size:1.1rem;margin-bottom:1rem;}
 .vh-footer-logo-box{
-  display:flex;align-items:center;justify-content:flex-start;overflow:visible;
-  background:#fff;border-radius:10px;margin-bottom:1.1rem;padding:.75rem 1.25rem;width:fit-content;
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+  width:96px;height:96px;background:#fff;border-radius:10px;margin-bottom:1.1rem;
 }
-.vh-footer-logo{height:56px!important;width:auto!important;max-width:260px!important;object-fit:contain!important;}
+.vh-footer-logo{height:96px!important;width:96px!important;object-fit:cover!important;transform:scale(1.32);}
 .vh-footer p{margin:0 0 .5rem;font-size:.9rem;display:flex;align-items:center;gap:.5rem;}
 .vh-footer a{color:#fff;text-decoration:none;}
 .vh-footer a:hover{color:var(--dorado);}
@@ -395,27 +345,22 @@ html{scroll-behavior:smooth;}
 .vh-footer-bottom{max-width:1120px;margin:2.5rem auto 0;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.2);text-align:center;font-size:.82rem;color:rgba(255,255,255,.7);}
 @media(max-width:700px){.vh-footer-inner{grid-template-columns:1fr;gap:2rem;}}
 
-/* BOTÓN "VOLVER ARRIBA" — con el logo dentro, perfectamente redondo
-   y enmarcado (20% más grande que el tamaño original: 48px → 58px). */
+/* BOTÓN "VOLVER ARRIBA" — solo el logo, circular, sin flecha, grande */
 .vh-top-btn{
   position:fixed;right:1.5rem;bottom:1.5rem;z-index:900;
-  width:58px;height:58px;border-radius:50%;border:3px solid #fff;
-  background:#fff;color:var(--verde-sello);padding:0;overflow:visible;
+  width:72px;height:72px;border-radius:50%;border:3px solid var(--dorado);
+  background:#fff;padding:8px;overflow:hidden;
   display:flex;align-items:center;justify-content:center;
-  cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.3), 0 0 0 2px var(--dorado);
+  cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.3);
   opacity:0;visibility:hidden;transform:translateY(10px);
   transition:opacity .25s ease,transform .25s ease,visibility .25s ease,box-shadow .2s ease;
 }
 .vh-top-btn.vh-visible{opacity:1;visibility:visible;transform:translateY(0);}
-.vh-top-btn:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 10px 28px rgba(0,0,0,.35), 0 0 0 2px var(--esmeralda);}
-.vh-top-btn img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;}
-.vh-top-btn .vh-top-btn-arrow{
-  position:absolute;bottom:-2px;right:-2px;width:20px;height:20px;border-radius:50%;
-  background:var(--dorado);color:var(--verde-sello);display:flex;align-items:center;
-  justify-content:center;border:2px solid #fff;
-}
-.vh-top-btn .vh-top-btn-arrow svg{width:11px;height:11px;}
-@media(max-width:600px){.vh-top-btn{right:1rem;bottom:1rem;width:52px;height:52px;}}
+.vh-top-btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 10px 28px rgba(0,0,0,.35);}
+/* object-fit:contain — nunca recorta el círculo del logo, se ajusta completo
+   dentro del botón sin importar la proporción real de la imagen. */
+.vh-top-btn img{width:100%;height:100%;object-fit:contain;display:block;}
+@media(max-width:600px){.vh-top-btn{right:1rem;bottom:1rem;width:60px;height:60px;}}
 
 @media(max-width:820px){
   .vh-checklist{grid-template-columns:1fr;}
@@ -465,19 +410,13 @@ html{scroll-behavior:smooth;}
     </div>
   </div>
 
-  <!-- ENCABEZADO: logo horizontal a la izquierda, menú a la derecha,
-       con hamburguesa en móvil (nunca se superponen). -->
+  <!-- ENCABEZADO -->
   <header id="vh-header" class="vh-header">
     <div class="vh-header-inner">
       <a class="vh-header-logo-link" href="#" aria-label="Escuela Visceral - inicio">
-        <!-- ⚠️ Reemplaza este src por tu logo HORIZONTAL (isotipo + texto en línea,
-             fondo blanco). Si me pasas la URL del archivo horizontal, lo actualizo. -->
         <img class="vh-header-logo" src="https://raw.githubusercontent.com/escuelavisceral/escuela-visceral/main/LOGO%20EL%20VISCERAL.png" alt="Escuela Visceral" />
       </a>
-      <button id="vh-burger" class="vh-burger" type="button" aria-label="Abrir menú" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
-      </button>
-      <nav id="vh-nav" class="vh-nav vh-textura-chip" aria-label="Menú principal">
+      <nav class="vh-nav" aria-label="Menú principal">
         <div class="vh-nav-links">
           <a href="#vh-nosotros">Quiénes somos</a>
           <a href="#vh-obtienes">Qué obtienes</a>
@@ -491,119 +430,26 @@ html{scroll-behavior:smooth;}
 
   <!-- HERO -->
   <section class="vh-hero">
-    <div class="vh-hero-grid">
-      <div class="vh-hero-inner">
-        <div class="vh-eyebrow">Escuela Visceral · Bachillerato y Carreras Técnicas</div>
-        <h1>Aprendemos de manera<em> diferente</em><br>Creamos un modelo educativo<br><em>innovador</em> </h1>
-        <p>Bachillerato por ciclos, virtual y/o presencial + carreras técnicas. Educación con certificación ante el Ministerio de Educación Nacional (MEN) y Secretaría de Educación</p>
-            <div class="vh-ruta" aria-label="Ruta: Bachillerato, luego Técnico de 1 año, homologable a universidad">
-          <button class="vh-ruta-paso" type="button" data-info="Certificado ante el MEN.<br>Virtual o presencial.<br>9 a 12 horas semanales."><span class="vh-ruta-icono">🎓</span>Bachillerato</button>
-          <button class="vh-ruta-paso" type="button" data-info="35 programas para elegir. <br> Certificado ante el MEN <br> 1 año de duración.<br>🎨 Artes ⚙️ Tec 🔨 Oficios 🌱 Tierra 🤝 Comunidad 💼 Negocios"><span class="vh-ruta-icono">🛠️</span>Técnico</button>
-          <button class="vh-ruta-paso vh-ruta-univ" type="button" data-info="Tu título técnico es homologable: continúa una carrera profesional en la universidad que lo reconozca."><span class="vh-ruta-icono">🏛️</span>Universidad <em>(homologable)</em></button>
-        </div>
-        <p id="vh-ruta-tooltip" class="vh-ruta-tooltip"></p>
-
-        <div class="vh-btn-row">
-          <a class="vh-btn vh-btn-dorado" href="#vh-inscripcion">Inscribirse</a>
-          <a class="vh-btn vh-btn-outline" href="#vh-mundos">Ver las 35 carreras técnicas</a>
-        </div>
+    <div class="vh-hero-inner">
+      <div class="vh-eyebrow">Escuela Visceral · Pedagogías para el Bienestar </div>
+      <h1>Aprendemos de manera<em> diferente</em><br>Creamos un modelo educativo<br><em>innovador</em> </h1>
+      <p>Bachillerato por ciclos, virtual y/o presencial + carreras técnicas. Educación con certificación ante el Ministerio de Educación Nacional (MEN) y Secretaría de Educación</p>
+      <div class="vh-ruta" aria-label="Ruta: Bachillerato, luego Técnico de 1 año, homologable a universidad">
+        <button class="vh-ruta-paso" type="button" data-info="Certificado ante el MEN.<br>Virtual o presencial.<br>9 a 12 horas semanales."><span class="vh-ruta-icono">🎓</span>Bachillerato</button>
+        <button class="vh-ruta-paso" type="button" data-info="35 programas para elegir.<br>Certificado ante el MEN.<br>1 año de duración.<br>🎨 Artes ⚙️ Tec 🔨 Oficios 🌱 Tierra 🤝 Comunidad 💼 Negocios"><span class="vh-ruta-icono">🛠️</span>Técnico</button>
+        <button class="vh-ruta-paso vh-ruta-univ" type="button" data-info="Tu título técnico es homologable: continúa una carrera profesional en la universidad que lo reconozca."><span class="vh-ruta-icono">🏛️</span>Universidad <em>(homologable)</em></button>
       </div>
+      <p id="vh-ruta-tooltip" class="vh-ruta-tooltip"></p>
 
-<div class="vh-hero-form-card">
-      <h2>Regístrate ahora</h2>
-      <p class="vh-cta-sub">Dinos qué necesitas estudiar y te contactamos hoy mismo.</p>
-
-      <form class="vh-form-real vh-form" id="vh-form-1">
-        <div id="vh-preseleccion-1" class="vh-preseleccion vh-preseleccion-real" role="status"></div>
-        <div><label for="vh-nombre-1">Nombre completo</label><input id="vh-nombre-1" autocomplete="name" name="nombre" required type="text" /></div>
-        <div><label for="vh-celular-1">Celular / WhatsApp</label><input id="vh-celular-1" autocomplete="tel" name="celular" required type="tel" /></div>
-        <div><label for="vh-email-1">Correo electrónico</label><input id="vh-email-1" autocomplete="email" name="email" required type="email" /></div>
-        <div>
-          <label for="vh-programa-1">Elijo estudiar...</label>
-          <select id="vh-programa-1" name="programa" class="vh-programa-select">
-            <option value="Bachillerato + Proyecto de Vida">Bachillerato + Proyecto de Vida</option>
-            <optgroup label="🎨 Artes">
-              <option value="Organizador de Eventos">Organizador de Eventos</option>
-              <option value="Auxiliar de Servicios de Recreación y Deporte">Auxiliar de Servicios de Recreación y Deporte</option>
-              <option value="Auxiliar de Diseño Gráfico">Auxiliar de Diseño Gráfico</option>
-              <option value="Informador Turístico">Informador Turístico</option>
-            </optgroup>
-            <optgroup label="⚙️ Tec">
-              <option value="Auxiliar de Sistemas Informáticos">Auxiliar de Sistemas Informáticos</option>
-              <option value="Auxiliar de Instrumentación y Automatización Industrial">Auxiliar de Instrumentación y Automatización Industrial</option>
-              <option value="Electromecánico">Electromecánico</option>
-            </optgroup>
-            <optgroup label="🔨 Oficios">
-              <option value="Construcciones Civiles">Construcciones Civiles</option>
-              <option value="Mecánica de Motores Diesel">Mecánica de Motores Diesel</option>
-              <option value="Mecánico de Motocicletas">Mecánico de Motocicletas</option>
-              <option value="Mecánico de Aire Acondicionado y Refrigeración">Mecánico de Aire Acondicionado y Refrigeración</option>
-              <option value="Seguridad Ocupacional y Laboral">Seguridad Ocupacional y Laboral</option>
-              <option value="Soldador">Soldador</option>
-              <option value="Operador de Equipo Pesado">Operador de Equipo Pesado</option>
-              <option value="Cadenero de Topografía">Cadenero de Topografía</option>
-              <option value="Electricista Industrial">Electricista Industrial</option>
-            </optgroup>
-            <optgroup label="🌱 Tierra">
-              <option value="Asistente de Saneamiento Ambiental">Asistente de Saneamiento Ambiental</option>
-              <option value="Operador de Máquina Agrícola">Operador de Máquina Agrícola</option>
-              <option value="Trabajador de Campo de Plantación Agrícola">Trabajador de Campo de Plantación Agrícola</option>
-              <option value="Productor Agropecuario de Explotación Mixta">Productor Agropecuario de Explotación Mixta</option>
-              <option value="Operadores de Plantas de Tratamiento de Agua">Operadores de Plantas de Tratamiento de Agua</option>
-              <option value="Auxiliar de Clínica Veterinaria">Auxiliar de Clínica Veterinaria</option>
-            </optgroup>
-            <optgroup label="🤝 Comunidad">
-              <option value="Auxiliar de Servicio Social y Comunitario">Auxiliar de Servicio Social y Comunitario</option>
-              <option value="Cocinero">Cocinero</option>
-              <option value="Auxiliar de Hogar Geriátrico">Auxiliar de Hogar Geriátrico</option>
-              <option value="Asistente de Preescolar">Asistente de Preescolar</option>
-              <option value="Auxiliar de Educación para la Primera Infancia">Auxiliar de Educación para la Primera Infancia</option>
-            </optgroup>
-            <optgroup label="💼 Negocios">
-              <option value="Auxiliar de Servicios Financieros">Auxiliar de Servicios Financieros</option>
-              <option value="Agente de Contact Center">Agente de Contact Center</option>
-              <option value="Auxiliar de Comercio Exterior">Auxiliar de Comercio Exterior</option>
-              <option value="Auxiliar Administrativo">Auxiliar Administrativo</option>
-              <option value="Auxiliar de Mercadeo">Auxiliar de Mercadeo</option>
-              <option value="Auxiliar de Centro de Distribución">Auxiliar de Centro de Distribución</option>
-              <option value="Auxiliar de Contratación">Auxiliar de Contratación</option>
-              <option value="Auxiliar Contable y Financiero">Auxiliar Contable y Financiero</option>
-            </optgroup>
-          </select>
-        </div>
-        <div>
-          <label>¿Cómo prefieres estudiar?</label>
-          <div class="vh-modalidad-row">
-            <label class="vh-modalidad-opt"><input type="radio" name="modalidad" value="Presencial" required /> Presencial</label>
-            <label class="vh-modalidad-opt"><input type="radio" name="modalidad" value="Virtual" required /> Virtual</label>
-            <label class="vh-modalidad-opt"><input type="radio" name="modalidad" value="Híbrido" required /> Híbrido</label>
-          </div>
-        </div>
-        <div class="vh-form-2col">
-          <div><label for="vh-ciudad-1">Ciudad</label><input id="vh-ciudad-1" autocomplete="address-level2" name="ciudad" required type="text" /></div>
-          <div><label for="vh-barrio-1">Barrio</label><input id="vh-barrio-1" autocomplete="address-line2" name="barrio" type="text" /></div>
-        </div>
-        <div><label for="vh-comentarios-1">¿Necesitas añadir algo más sobre ti?</label><textarea id="vh-comentarios-1" name="comentarios" rows="3" placeholder="Opcional..."></textarea></div>
-        <button type="submit">Enviar solicitud</button>
-      </form>
-
-      <div id="vh-form-success-1" class="vh-form-success" role="status">
-        <h3>¡Solicitud recibida!</h3>
-        <p>Gracias por inscribirte a Escuela Visceral. Nuestro equipo de admisiones te contactará muy pronto para coordinar tu examen de admisión.</p>
+      <div class="vh-btn-row">
+        <a class="vh-btn vh-btn-dorado" href="#vh-inscripcion">Inscribirse</a>
+        <a class="vh-btn vh-btn-outline" href="#vh-mundos">Ver las 35 carreras técnicas</a>
       </div>
-      <div id="vh-form-error-1" class="vh-form-error" role="alert">
-        <h3>No pudimos enviar tu solicitud</h3>
-        <p>Intenta de nuevo en unos segundos. Si el problema continúa, escríbenos directamente a <a href="mailto:admisiones@elvisceral.org">admisiones@elvisceral.org</a> o por <a href="https://wa.me/573127586103" target="_blank" rel="noopener">WhatsApp</a>.</p>
-      </div>
-      <p class="vh-form-nota">La educación es la inversión más grande que puedes hacerle a tu espíritu: su único fin es fortalecer tu propósito.</p>
-    </div>
-        </div>
     </div>
   </section>
 
   <!-- DIFERENCIADORES -->
-  <section id="vh-flexibilidad" class="vh-diferenciadores vh-textura-chip">
-    <h2 class="vh-diferenciadores-titulo">¿Qué nos diferencia de los demás colegios?</h2>
+  <section id="vh-flexibilidad" class="vh-diferenciadores">
     <div class="vh-pills-row">
       <span class="vh-pill">Flexibilidad horaria</span>
       <span class="vh-pill">Flexibilidad educativa</span>
@@ -643,7 +489,7 @@ html{scroll-behavior:smooth;}
         </div>
         <div class="vh-comp-col visceral">
           <span class="vh-comp-label">El Visceral</span>
-          <div class="vh-flow">Pregunta → Explora → Crea → Experimenta → Comparte → Mejora</div>
+          <div class="vh-flow">Pregunta → Explora → Crea → Construye tu proyecto transversal integrador → Valida → Mide → Ejecuta → Comparte → Mejora</div>
         </div>
       </div>
     </div>
@@ -681,11 +527,10 @@ html{scroll-behavior:smooth;}
   <!-- BACHILLERATO -->
   <section id="vh-bachillerato" class="vh-bachillerato-sec">
     <div class="vh-wrap">
-      <div class="vh-mundos-kicker">Colegio por ciclos</div>
+      <div class="vh-mundos-kicker">Pedagogías para el Bienestar</div>
       <h2>Visceral Bachillerato</h2>
       <p class="vh-mundos-intro">¿Entrenas, trabajas o simplemente aprendes distinto? El bachillerato virtual o presencial de Escuela Visceral es para deportistas y jóvenes desde los 15 años que quieren estudiar a su ritmo sin dejar de perseguir lo que aman. Avanzas por ciclos, con convenio educativo certificado ante el Ministerio de Educación Nacional (MEN), y desde tu primer ciclo con nosotros (6° grado) puedes sumar una carrera técnica y graduarte con doble título.</p>
       <p class="vh-mundos-intro"><strong>Es un bachillerato acelerado, pero consciente:</strong> el tiempo justo y suficiente para que además logres un proyecto transversal integrador, que conecta lo que aprendes en cada ciclo con un propósito real y propio.</p>
-      <!-- NOTA PARA EL EQUIPO DE VISCERAL: confirma con tu institución convenio que la denominación de los Ciclos III–VI y su equivalencia de grados coincide exactamente con lo registrado ante el MEN antes de publicar. -->
       <div class="vh-ciclos-grid" aria-label="Ciclos del bachillerato, de 6° grado a carrera técnica">
         <div class="vh-ciclo-card"><span class="num">III</span><span class="rango">Grados 6° – 7°</span><span class="desc">Básica secundaria</span></div>
         <div class="vh-ciclo-card activo"><span class="num">IV</span><span class="rango">Grados 8° – 9°</span><span class="desc">Inicia tu doble titulación</span></div>
@@ -700,20 +545,20 @@ html{scroll-behavior:smooth;}
   <!-- ESCUELA DE ARTES Y OFICIOS — CARRERAS TÉCNICAS -->
   <section id="vh-mundos" class="vh-mundos-sec">
     <div class="vh-wrap">
-      <div class="vh-mundos-kicker">Escuela Visceral</div>
+      <div class="vh-mundos-kicker">Escuela de Artes y Oficios Visceral</div>
       <h2>Carreras Técnicas</h2>
-      <p class="vh-mundos-intro">Queremos articular estas 6 áreas de conocimiento para construir soberanía alimentaria, tecnológica, pedagógica, comercial, artesanal y de la tierra. Cada área va hilando las necesidades actuales de un mundo natural, sostenible y equilibrado, con 35 programas técnicos concretos: descubre tus intereses en el bachillerato, o si ya sabes lo que quieres, elige tu área y sal al mundo laboral en solo 1 año.</p>
+      <p class="vh-mundos-intro">Queremos articular estas 6 áreas de conocimiento para construir soberanía alimentaria, tecnológica, pedagógica, comercial, artesanal y de la tierra. Cada área va hilando las necesidades actuales de un mundo natural, sostenible y equilibrado, con 35 programas técnicos concretos: descubre tus intereses en el bachillerato, o si ya sabes lo que necesitas, elige tu área y sal al mundo laboral en solo 1 año.</p>
       <p class="vh-mundos-homologa">Todas nuestras carreras técnicas laborales tienen certificación con validez ante el Ministerio del Trabajo (MIT), duran 1 año y son homologables: puedes usar este título técnico para continuar tus estudios profesionales en universidades que reconozcan la homologación.</p>
       <p class="vh-mundos-pregunta">¿Qué te gustaría Aprender?</p>
       <p class="vh-mundos-instruccion">Elige una de las 6 áreas: sus carreras técnicas se abren en una ventana emergente.</p>
 
       <div class="vh-mundos-grid">
-        <a class="vh-mundo-btn" href="#vh-modal-artes" data-world="artes" onclick="vhMundoClick(this,event)"><span class="emoji" aria-hidden="true">🎨</span><span class="verbo">Crear</span><span class="nombre">Artes</span><span class="cuenta">4 programas</span></a>
-        <a class="vh-mundo-btn" href="#vh-modal-tec" data-world="tec" onclick="vhMundoClick(this,event)"><span class="emoji" aria-hidden="true">⚙️</span><span class="verbo">Entender y automatizar</span><span class="nombre">Tec</span><span class="cuenta">3 programas</span></a>
-        <a class="vh-mundo-btn" href="#vh-modal-oficios" data-world="oficios" onclick="vhMundoClick(this,event)"><span class="emoji" aria-hidden="true">🔨</span><span class="verbo">Construir y reparar</span><span class="nombre">Oficios</span><span class="cuenta">9 programas</span></a>
-        <a class="vh-mundo-btn" href="#vh-modal-tierra" data-world="tierra" onclick="vhMundoClick(this,event)"><span class="emoji" aria-hidden="true">🌱</span><span class="verbo">La tierra y la vida</span><span class="nombre">Tierra</span><span class="cuenta">6 programas</span></a>
-        <a class="vh-mundo-btn" href="#vh-modal-comunidad" data-world="comunidad" onclick="vhMundoClick(this,event)"><span class="emoji" aria-hidden="true">🤝</span><span class="verbo">Cuidar y acompañar</span><span class="nombre">Comunidad</span><span class="cuenta">5 programas</span></a>
-        <a class="vh-mundo-btn" href="#vh-modal-negocios" data-world="negocios" onclick="vhMundoClick(this,event)"><span class="emoji" aria-hidden="true">💼</span><span class="verbo">Crear y mover negocios</span><span class="nombre">Negocios</span><span class="cuenta">8 programas</span></a>
+        <a class="vh-mundo-btn" href="#vh-modal-artes" data-world="artes"><span class="emoji" aria-hidden="true">🎨</span><span class="verbo">Crear</span><span class="nombre">Artes</span><span class="cuenta">4 programas</span></a>
+        <a class="vh-mundo-btn" href="#vh-modal-tec" data-world="tec"><span class="emoji" aria-hidden="true">⚙️</span><span class="verbo">Entender y automatizar</span><span class="nombre">Tec</span><span class="cuenta">3 programas</span></a>
+        <a class="vh-mundo-btn" href="#vh-modal-oficios" data-world="oficios"><span class="emoji" aria-hidden="true">🔨</span><span class="verbo">Construir y reparar</span><span class="nombre">Oficios</span><span class="cuenta">9 programas</span></a>
+        <a class="vh-mundo-btn" href="#vh-modal-tierra" data-world="tierra"><span class="emoji" aria-hidden="true">🌱</span><span class="verbo">La tierra y la vida</span><span class="nombre">Tierra</span><span class="cuenta">6 programas</span></a>
+        <a class="vh-mundo-btn" href="#vh-modal-comunidad" data-world="comunidad"><span class="emoji" aria-hidden="true">🤝</span><span class="verbo">Cuidar y acompañar</span><span class="nombre">Comunidad</span><span class="cuenta">5 programas</span></a>
+        <a class="vh-mundo-btn" href="#vh-modal-negocios" data-world="negocios"><span class="emoji" aria-hidden="true">💼</span><span class="verbo">Crear y mover negocios</span><span class="nombre">Negocios</span><span class="cuenta">8 programas</span></a>
       </div>
       <div class="vh-carreras-cta"><p>Haz clic sobre el nombre dentro de la ventana emergente: te llevamos directo al formulario de inscripción, con tu programa ya elegido.</p></div>
 
@@ -957,7 +802,7 @@ html{scroll-behavior:smooth;}
   </section>
 
   <!-- CIFRAS -->
-  <section class="vh-cifras vh-textura-chip">
+  <section class="vh-cifras">
     <div class="vh-wrap vh-grid-4-stats">
       <div><div class="vh-stat-num">2026</div><div class="vh-stat-label">Fundación</div></div>
       <div><div class="vh-stat-num">35</div><div class="vh-stat-label">Programas técnicos homologables</div></div>
@@ -980,7 +825,7 @@ html{scroll-behavior:smooth;}
             <li>Puedes escoger virtual o presencial</li>
             <li>Certificación con validez ante el MEN</li>
           </ul>
-          <a class="vh-btn vh-btn-dorado vh-prog" style="width:100%;color:#fff;border:none;display:block;" href="#vh-inscripcion" data-prog="Bachillerato + Proyecto de Vida" onclick="vhProgClick(this,event)">Inscribirse</a>
+          <a class="vh-btn vh-btn-dorado vh-prog" style="width:100%;color:#14301f;border:none;display:block;" href="#vh-inscripcion" data-prog="Bachillerato + Proyecto de Vida" onclick="vhProgClick(this,event)">Inscribirse</a>
         </div>
         <div class="vh-precio-card">
           <div class="vh-precio-label">Técnico + Emprendimiento o Proyecto de Vida</div>
@@ -998,7 +843,7 @@ html{scroll-behavior:smooth;}
           </ul>
           <div class="vh-precio-homologa">Precio de lanzamiento: al matricularte, este valor queda congelado para ti durante toda la carrera.</div>
           <div class="vh-precio-homologa" style="margin-top:.6rem;">Título técnico certificado ante el Ministerio del Trabajo (MIT), homologable para continuar estudios profesionales en la universidad.</div>
-          <a class="vh-btn vh-btn-dorado" style="width:100%;color:#fff;border:none;margin-top:1.25rem;display:block;" href="#vh-inscripcion">Inscribirse</a>
+          <a class="vh-btn vh-btn-dorado" style="width:100%;color:#14301f;border:none;margin-top:1.25rem;display:block;" href="#vh-inscripcion">Inscribirse</a>
         </div>
       </div>
     </div>
@@ -1016,7 +861,7 @@ html{scroll-behavior:smooth;}
 
       <h3 class="vh-requisitos-titulo">Requisitos de ingreso</h3>
       <p class="vh-requisitos-intro">Aplican tanto para el bachillerato por ciclos como para las 35 carreras técnicas:</p>
-      <div class="vh-checklist vh-requisitos-grid">
+      <div class="vh-checklist">
         <div class="vh-check-item">Documento de identidad vigente (cédula o tarjeta de identidad)</div>
         <div class="vh-check-item">Certificado del último grado académico aprobado</div>
         <div class="vh-check-item">Foto tipo documento 3x4</div>
@@ -1033,14 +878,14 @@ html{scroll-behavior:smooth;}
       <h2>Aquí empieza tu propósito, de la mano de otros propósitos.</h2>
       <p class="vh-cta-sub">Deja tus datos y te contactamos para tu examen de admisión.</p>
 
-      <form class="vh-form-real vh-form" id="vh-form-2">
-        <div id="vh-preseleccion-2" class="vh-preseleccion vh-preseleccion-real" role="status"></div>
-        <div><label for="vh-nombre-2">Nombre completo</label><input id="vh-nombre-2" autocomplete="name" name="nombre" required type="text" /></div>
-        <div><label for="vh-celular-2">Celular / WhatsApp</label><input id="vh-celular-2" autocomplete="tel" name="celular" required type="tel" /></div>
-        <div><label for="vh-email-2">Correo electrónico</label><input id="vh-email-2" autocomplete="email" name="email" required type="email" /></div>
+      <form id="vh-form" class="vh-form">
+        <div id="vh-preseleccion" class="vh-preseleccion" role="status"></div>
+        <div><label for="vh-nombre">Nombre completo</label><input id="vh-nombre" autocomplete="name" name="nombre" required type="text" /></div>
+        <div><label for="vh-celular">Celular / WhatsApp</label><input id="vh-celular" autocomplete="tel" name="celular" required type="tel" /></div>
+        <div><label for="vh-email">Correo electrónico</label><input id="vh-email" autocomplete="email" name="email" required type="email" /></div>
         <div>
-          <label for="vh-programa-2">Elijo estudiar...</label>
-          <select id="vh-programa-2" name="programa" class="vh-programa-select">
+          <label for="vh-programa">Elijo estudiar...</label>
+          <select id="vh-programa" name="programa">
             <option value="Bachillerato + Proyecto de Vida">Bachillerato + Proyecto de Vida</option>
             <optgroup label="🎨 Artes">
               <option value="Organizador de Eventos">Organizador de Eventos</option>
@@ -1100,18 +945,18 @@ html{scroll-behavior:smooth;}
           </div>
         </div>
         <div class="vh-form-2col">
-          <div><label for="vh-ciudad-2">Ciudad</label><input id="vh-ciudad-2" autocomplete="address-level2" name="ciudad" required type="text" /></div>
-          <div><label for="vh-barrio-2">Barrio</label><input id="vh-barrio-2" autocomplete="address-line2" name="barrio" type="text" /></div>
+          <div><label for="vh-ciudad">Ciudad</label><input id="vh-ciudad" autocomplete="address-level2" name="ciudad" required type="text" /></div>
+          <div><label for="vh-barrio">Barrio</label><input id="vh-barrio" autocomplete="address-line2" name="barrio" type="text" /></div>
         </div>
-        <div><label for="vh-comentarios-2">¿Necesitas añadir algo más sobre ti?</label><textarea id="vh-comentarios-2" name="comentarios" rows="3" placeholder="Opcional..."></textarea></div>
+        <div><label for="vh-comentarios">¿Necesitas añadir algo más sobre ti?</label><textarea id="vh-comentarios" name="comentarios" rows="3" placeholder="Opcional..."></textarea></div>
         <button type="submit">Enviar solicitud</button>
       </form>
 
-      <div id="vh-form-success-2" class="vh-form-success" role="status">
+      <div id="vh-form-success" class="vh-form-success" role="status">
         <h3>¡Solicitud recibida!</h3>
         <p>Gracias por inscribirte a Escuela Visceral. Nuestro equipo de admisiones te contactará muy pronto para coordinar tu examen de admisión.</p>
       </div>
-      <div id="vh-form-error-2" class="vh-form-error" role="alert">
+      <div id="vh-form-error" class="vh-form-error" role="alert">
         <h3>No pudimos enviar tu solicitud</h3>
         <p>Intenta de nuevo en unos segundos. Si el problema continúa, escríbenos directamente a <a href="mailto:admisiones@elvisceral.org">admisiones@elvisceral.org</a> o por <a href="https://wa.me/573127586103" target="_blank" rel="noopener">WhatsApp</a>.</p>
       </div>
@@ -1120,7 +965,7 @@ html{scroll-behavior:smooth;}
   </section>
 
   <!-- PIE DE PÁGINA -->
-  <footer class="vh-footer vh-textura-chip">
+  <footer class="vh-footer">
     <div class="vh-footer-inner">
       <div>
         <div class="vh-footer-logo-box">
@@ -1164,9 +1009,6 @@ html{scroll-behavior:smooth;}
 
   <button id="vh-top-btn" class="vh-top-btn" type="button" aria-label="Volver arriba">
     <img src="https://raw.githubusercontent.com/escuelavisceral/escuela-visceral/main/LOGO%20EL%20VISCERAL.png" alt="Volver arriba" />
-    <span class="vh-top-btn-arrow" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
-    </span>
   </button>
 
 </div>
@@ -1195,11 +1037,8 @@ function vhAbrirModal(id){
 }
 
 function vhSeleccionarPrograma(prog){
-  // Actualiza TODOS los selects de programa que haya en la página
-  // (hay dos formularios: el del hero y el del pie de página).
-  var selects = document.querySelectorAll('.vh-programa-select');
-  for(var s=0;s<selects.length;s++){
-    var select = selects[s];
+  var select = document.getElementById('vh-programa');
+  if(select){
     var encontrado = false;
     for(var i=0;i<select.options.length;i++){
       if(select.options[i].value === prog){ select.selectedIndex = i; encontrado = true; break; }
@@ -1208,9 +1047,8 @@ function vhSeleccionarPrograma(prog){
       select.dispatchEvent(new Event('change', {bubbles:true}));
     }
   }
-  var preselecciones = document.querySelectorAll('.vh-preseleccion-real');
-  for(var p=0;p<preselecciones.length;p++){
-    var preseleccion = preselecciones[p];
+  var preseleccion = document.getElementById('vh-preseleccion');
+  if(preseleccion){
     preseleccion.textContent = '✓ Programa seleccionado: ' + prog;
     preseleccion.style.display = 'block';
     preseleccion.classList.remove('vh-pulse');
@@ -1274,26 +1112,6 @@ function vhMundoClick(el, ev){
       return;
     }
 
-    var burger = e.target.closest ? e.target.closest('#vh-burger') : null;
-    if(burger){
-      var nav = document.getElementById('vh-nav');
-      if(nav){
-        var abierto = nav.classList.toggle('vh-nav-abierto');
-        burger.setAttribute('aria-expanded', abierto ? 'true' : 'false');
-      }
-      return;
-    }
-
-    // clic en un enlace del menú (en móvil) cierra la hamburguesa
-    var navLink = e.target.closest ? e.target.closest('.vh-nav a') : null;
-    if(navLink){
-      var navEl = document.getElementById('vh-nav');
-      if(navEl) navEl.classList.remove('vh-nav-abierto');
-      var burgerBtn = document.getElementById('vh-burger');
-      if(burgerBtn) burgerBtn.setAttribute('aria-expanded','false');
-      return;
-    }
-
     var rutaBtn = e.target.closest ? e.target.closest('.vh-ruta-paso') : null;
     if(rutaBtn){
       var pasos = document.querySelectorAll('.vh-ruta-paso');
@@ -1311,16 +1129,6 @@ function vhMundoClick(el, ev){
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape'){
       vhCerrarModalSinSalto();
-      var nav = document.getElementById('vh-nav');
-      if(nav) nav.classList.remove('vh-nav-abierto');
-    }
-  });
-
-  window.addEventListener('hashchange', function(){
-    var abierto = document.querySelector('.vh-modal-target:target .vh-modal-box');
-    if(abierto){
-      abierto.setAttribute('tabindex','-1');
-      abierto.focus({preventScroll:true});
     }
   });
 
@@ -1353,88 +1161,72 @@ function vhMundoClick(el, ev){
     });
   }
 
-  // Formulario(s): hay dos en la página (hero y pie de página), ambos
-  // con la clase "vh-form-real". Se envían con Formspree, que SÍ
-  // funciona sirviendo la web como HTML estático desde GitHub Pages
-  // (a diferencia de admin-ajax.php, que solo existe dentro de WordPress).
-  //
-  // ⚠️ PASO OBLIGATORIO: crea una cuenta gratis en https://formspree.io,
-  // crea un formulario nuevo con destino admisiones@elvisceral.org
-  // (y agrega escuelavisceral@gmail.com como notificación adicional
-  // desde el panel de Formspree), copia el ID que te da (algo como
-  // "xzzeqwkb") y reemplaza TU_ID_DE_FORMSPREE aquí abajo por ese ID.
-  var VH_FORMSPREE_ENDPOINT = 'https://formspree.io/f/TU_ID_DE_FORMSPREE';
+  // Envío del formulario: apunta a tu propio script en PHP (PHPMailer,
+  // que ya usa el SMTP de admisiones@elvisceral.org). Cambia la URL de
+  // abajo por la ruta real donde subas ese script en tu hosting.
+  var VH_ENDPOINT = '/enviar-inscripcion.php';
 
-  var formularios = document.querySelectorAll('.vh-form-real');
-  for(var fi=0; fi<formularios.length; fi++){
-    (function(form){
-      var wrapper = form.closest('.vh-wrap') || form.closest('.vh-hero-form-card') || form.parentElement;
-      var successBox = wrapper.querySelector('.vh-form-success');
-      var errorBox = wrapper.querySelector('.vh-form-error');
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        var submitBtn = form.querySelector('button[type="submit"]');
-        var originalText = submitBtn.textContent;
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Enviando...';
-        if(errorBox) errorBox.style.display = 'none';
+  var form = document.getElementById('vh-form');
+  var successBox = document.getElementById('vh-form-success');
+  var errorBox = document.getElementById('vh-form-error');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      errorBox.style.display = 'none';
 
-        var data = new FormData(form);
+      var data = new FormData(form);
 
-        fetch(VH_FORMSPREE_ENDPOINT, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(function(r){ return r.json().then(function(json){ return {ok:r.ok, json:json}; }); })
-        .then(function(res){
-          if(res.ok){
-            form.style.display = 'none';
-            if(successBox) successBox.style.display = 'block';
-          } else {
-            throw new Error('envio_fallido');
-          }
-        })
-        .catch(function(){
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-          if(errorBox) errorBox.style.display = 'block';
-        });
+      fetch(VH_ENDPOINT, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(res){
+        if(res && res.success){
+          form.style.display = 'none';
+          successBox.style.display = 'block';
+        } else {
+          throw new Error('envio_fallido');
+        }
+      })
+      .catch(function(){
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        errorBox.style.display = 'block';
       });
-    })(formularios[fi]);
+    });
   }
 })();
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
 <script>
-/* Fondo tipo "circuito/microchip" — los nodos (chakanas) ahora se
-   conectan con líneas cuando están cerca entre sí, como una red.
-   Se mantiene liviano: mismo número de partículas/nodos de antes,
-   solo se agregó el cálculo de distancias entre nodos (barato,
-   son pocos: 8 nodos → máx 28 comparaciones por frame). */
 (function(){
   var host = document.getElementById('vh-bg-canvas');
   if(!host || typeof p5 === 'undefined') return;
 
-  var DORADO = [200,154,46];
-  var ESMERALDA = [0,155,104];
-  var NEON = [0,217,154];
-  var CREMA = [244,247,243];
+  var DORADO = [184,145,46];
+  var ESMERALDA = [11,110,79];
+  var CREMA = [250,248,243];
 
   var sketch = function(p){
     var particles = [];
     var chakanas = [];
-    var NUM_PART = 90;
-    var NUM_CHAKANA = 9;
+    var NUM_PART = 55;
+    var NUM_CHAKANA = 4;
     var mouse = { x:-9999, y:-9999, active:false };
     var lastScroll = 0, scrollVel = 0, scrollDir = 1;
 
     function makeChakana(){
       return {
         x: p.random(p.width), y: p.random(p.height),
-        s: p.random(16,32), rot: p.random(p.TWO_PI),
-        spin: p.random(0.0015,0.004) * (p.random()<0.5?-1:1)
+        s: p.random(14,26), rot: p.random(p.TWO_PI),
+        spin: p.random(0.0012,0.003) * (p.random()<0.5?-1:1)
       };
     }
 
@@ -1444,8 +1236,8 @@ function vhMundoClick(el, ev){
       for(var i=0;i<NUM_PART;i++){
         particles.push({
           x:p.random(p.width), y:p.random(p.height),
-          r:p.random(1.6,3.6), speed:p.random(0.12,0.4),
-          wob:p.random(p.TWO_PI), c: (function(){ var r=p.random(); return r<0.45?DORADO:(r<0.8?ESMERALDA:NEON); })()
+          r:p.random(1.4,3), speed:p.random(0.1,0.32),
+          wob:p.random(p.TWO_PI), c: p.random()<0.6?DORADO:ESMERALDA
         });
       }
       for(var j=0;j<NUM_CHAKANA;j++) chakanas.push(makeChakana());
@@ -1468,8 +1260,8 @@ function vhMundoClick(el, ev){
       p.translate(cx,cy);
       p.rotate(rot);
       p.noFill();
-      p.stroke(DORADO[0],DORADO[1],DORADO[2], near?235:130);
-      p.strokeWeight(near?2.1:1.2);
+      p.stroke(DORADO[0],DORADO[1],DORADO[2], near?150:55);
+      p.strokeWeight(near?1.6:1);
       var u = s/3;
       var pts = [
         [-u,-3*u],[u,-3*u],[u,-u],[3*u,-u],[3*u,u],[u,u],
@@ -1478,11 +1270,6 @@ function vhMundoClick(el, ev){
       p.beginShape();
       for(var i=0;i<pts.length;i++) p.vertex(pts[i][0],pts[i][1]);
       p.endShape(p.CLOSE);
-      if(near){
-        p.noStroke();
-        p.fill(DORADO[0],DORADO[1],DORADO[2],70);
-        p.circle(0,0,s*2.6);
-      }
       p.pop();
     }
 
@@ -1494,71 +1281,22 @@ function vhMundoClick(el, ev){
       if(Math.abs(d) > 0.1) scrollDir = d>0 ? 1 : -1;
       scrollVel = scrollVel*0.9 + Math.abs(d)*0.1;
 
-      // Líneas de red entre nodos (chakanas) cercanos, estilo circuito.
-      var MAXD = Math.min(p.width,p.height)*0.32;
-      p.strokeWeight(1);
-      for(var a=0;a<chakanas.length;a++){
-        for(var b=a+1;b<chakanas.length;b++){
-          var dx2 = chakanas[a].x-chakanas[b].x, dy2 = chakanas[a].y-chakanas[b].y;
-          var dist2 = Math.sqrt(dx2*dx2+dy2*dy2);
-          if(dist2 < MAXD){
-            var alpha = (1 - dist2/MAXD) * 90;
-            p.stroke(DORADO[0],DORADO[1],DORADO[2], alpha);
-            p.line(chakanas[a].x, chakanas[a].y, chakanas[b].x, chakanas[b].y);
-          }
-        }
-      }
-
-      p.push();
-      p.translate(p.width*0.86, p.height*0.14);
-      p.rotate((p.frameCount*0.0009 + scrollVel*0.002) * scrollDir * 40);
-      var R = Math.min(p.width,p.height)*0.11;
-      p.noFill();
-      p.stroke(DORADO[0],DORADO[1],DORADO[2], 90+Math.min(scrollVel*6,90));
-      p.strokeWeight(1.2);
-      p.circle(0,0,R*2);
-      for(var i=0;i<8;i++){
-        var a2 = (p.TWO_PI/8)*i;
-        var x1=Math.cos(a2)*R, y1=Math.sin(a2)*R;
-        p.stroke(CREMA[0],CREMA[1],CREMA[2],55);
-        p.line(0,0,x1,y1);
-        p.noStroke();
-        p.fill(DORADO[0],DORADO[1],DORADO[2],160);
-        p.circle(x1,y1,7);
-      }
-      p.pop();
-
       for(var k=0;k<chakanas.length;k++){
         var ch = chakanas[k];
-        ch.rot += ch.spin*(1+scrollVel*0.8);
+        ch.rot += ch.spin*(1+scrollVel*0.6);
         var dx = mouse.x-ch.x, dy = mouse.y-ch.y;
-        var near = mouse.active && Math.sqrt(dx*dx+dy*dy) < 150;
-        drawChakana(ch.x, ch.y, ch.s+(near?6:0), ch.rot, near);
+        var near = mouse.active && Math.sqrt(dx*dx+dy*dy) < 130;
+        drawChakana(ch.x, ch.y, ch.s, ch.rot, near);
       }
 
       p.noStroke();
       for(var m=0;m<particles.length;m++){
         var pt = particles[m];
-        pt.y -= pt.speed + Math.min(scrollVel*0.6, 2.2);
+        pt.y -= pt.speed + Math.min(scrollVel*0.5, 1.8);
         if(pt.y < -10){ pt.y = p.height+10; pt.x = p.random(p.width); }
-        var wobble = Math.sin((pt.y*0.02)+pt.wob)*10;
+        var wobble = Math.sin((pt.y*0.02)+pt.wob)*8;
         var px = pt.x+wobble, py = pt.y;
-
-        if(mouse.active){
-          var mdx = px-mouse.x, mdy = py-mouse.y;
-          var mdist = Math.sqrt(mdx*mdx+mdy*mdy);
-          if(mdist < 130 && mdist > 0.01){
-            var f = (130-mdist)/130;
-            px += (mdx/mdist)*f*18;
-            py += (mdy/mdist)*f*18;
-            p.stroke(pt.c[0],pt.c[1],pt.c[2],130*f);
-            p.strokeWeight(1.1);
-            p.line(px,py,mouse.x,mouse.y);
-            p.noStroke();
-          }
-        }
-        var closeToMouse = mouse.active && Math.hypot(px-mouse.x,py-mouse.y) < 130;
-        p.fill(pt.c[0],pt.c[1],pt.c[2], closeToMouse?220:110);
+        p.fill(pt.c[0],pt.c[1],pt.c[2], 65);
         p.circle(px,py, pt.r*2);
       }
     };
@@ -1570,44 +1308,3 @@ function vhMundoClick(el, ev){
 
 </body>
 </html>
-<!-- ═══════════════════════════════════════════════════════════════
-CÓMO ACTIVAR EL ENVÍO DEL FORMULARIO (funciona en GitHub, sin PHP)
-
-El JavaScript de arriba envía ambos formularios (el del hero y el del
-pie de página) a Formspree, un servicio gratuito de formularios para
-sitios estáticos:
-
-1. Entra a https://formspree.io y crea una cuenta gratis.
-2. Crea un formulario nuevo. En el correo de destino pon
-   admisiones@elvisceral.org.
-3. Dentro de las opciones de ese formulario en Formspree, agrega
-   escuelavisceral@gmail.com como notificación adicional (Formspree
-   permite varios destinatarios en los planes superiores; si tu plan
-   gratis solo permite uno, deja admisiones@elvisceral.org y reenvía
-   internamente, o crea una regla de reenvío automático en ese correo
-   hacia escuelavisceral@gmail.com).
-4. Formspree te da un ID de formulario (ej: "xzzeqwkb"). Busca en el
-   <script> de arriba la línea:
-       var VH_FORMSPREE_ENDPOINT = 'https://formspree.io/f/TU_ID_DE_FORMSPREE';
-   y reemplaza TU_ID_DE_FORMSPREE por tu ID real.
-5. Sube el archivo a tu repositorio de GitHub y publícalo. Mientras
-   ese ID siga siendo el de ejemplo, el botón mostrará el mensaje de
-   error (eso es intencional: evita que creas que ya está enviando
-   cuando no lo está).
-
-Si en cambio la web sigue viviendo en WordPress (no en GitHub), puedes
-seguir usando el envío nativo por PHP con wp_mail(). Pide ese bloque
-de código si lo necesitas: ya no está incluido aquí por defecto porque
-el sitio se preparó para funcionar como HTML estático.
-═══════════════════════════════════════════════════════════════ -->
-
-<!--
-SEO / TÍTULO Y META DESCRIPCIÓN — configúralo en tu plugin de SEO
-(Yoast SEO / RankMath / All in One SEO), no en este bloque HTML.
-
-Título SEO: Escuela Visceral | Bachillerato y 35 Carreras Técnicas en Bogotá
-Meta descripción: Escuela Visceral: bachillerato virtual o presencial y
-carreras técnicas de 1 año, certificadas ante el MEN y homologables a
-universidad. Inscríbete en Bogotá, Colombia.
-Slug/URL sugerido: /escuela-visceral-inscripciones
--->
