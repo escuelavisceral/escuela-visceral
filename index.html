@@ -50,7 +50,7 @@ html{scroll-behavior:smooth;}
   color:#fff; text-align:center; padding:6rem 1.5rem 5rem; position:relative; overflow:hidden;
 }
 .vh-hero::before{
-  content:'';position:absolute;inset:0;
+  content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(ellipse 55% 55% at 75% 20%,rgba(184,145,46,.16) 0%,transparent 70%);
 }
 .vh-hero-inner{position:relative;max-width:780px;margin:0 auto;}
@@ -76,7 +76,7 @@ html{scroll-behavior:smooth;}
 }
 
 .vh-hero-eyebrow-wrap{text-align:center;margin-bottom:1.75rem;position:relative;z-index:1;}
-.vh-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;max-width:1160px;margin:0 auto;text-align:left;}
+.vh-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;max-width:1160px;margin:0 auto;text-align:left;position:relative;z-index:1;}
 .vh-hero-grid .vh-hero-inner{margin:0;max-width:none;}
 .vh-hero-grid .vh-ruta,.vh-hero-grid .vh-btn-row{justify-content:flex-start;margin-left:0;}
 .vh-hero-grid .vh-ruta-tooltip{margin:0 0 1.5rem;}
@@ -405,7 +405,7 @@ html{scroll-behavior:smooth;}
 
 /* TÍTULOS DE SECCIÓN — textura dorada sutil, resplandor suave */
 .vh-home h2.vh-titulo-oro{
-  position:relative;display:inline-block;
+  position:relative;display:block;
   background:linear-gradient(100deg,var(--verde-sello) 0%,var(--verde-sello) 38%,var(--dorado) 50%,var(--verde-sello) 62%,var(--verde-sello) 100%);
   background-size:220% 100%;
   -webkit-background-clip:text;background-clip:text;color:transparent !important;-webkit-text-fill-color:transparent;
@@ -484,8 +484,8 @@ html{scroll-behavior:smooth;}
         <h1>Aprendemos de manera<em> diferente</em><br>Creamos un modelo educativo<br><em>innovador</em> </h1>
         <p>Bachillerato por ciclos, virtual y/o presencial + carreras técnicas. Educación con certificación ante el Ministerio de Educación Nacional (MEN) y Secretaría de Educación</p>
         <div class="vh-ruta" aria-label="Ruta: Bachillerato, luego Técnico de 1 año, homologable a universidad">
-          <button class="vh-ruta-paso" type="button" data-info="Certificado ante el MEN.<br>Virtual o presencial.<br>9 a 12 horas semanales."><span class="vh-ruta-icono">🎓</span>Bachillerato</button>
-          <button class="vh-ruta-paso" type="button" data-info="35 programas para elegir.<br>Certificado ante el MEN.<br>1 año de duración.<br>🎨 Artes ⚙️ Tec 🔨 Oficios 🌱 Tierra 🤝 Comunidad 💼 Negocios"><span class="vh-ruta-icono">🛠️</span>Técnico</button>
+          <button class="vh-ruta-paso" type="button" data-info="Certificado ante el MEN<br>Virtual o presencial<br>9 a 12 horas semanales"><span class="vh-ruta-icono">🎓</span>Bachillerato</button>
+          <button class="vh-ruta-paso" type="button" data-info="35 programas para elegir<br>Certificado ante el MEN<br>1 año de duración<br>🎨 Artes ⚙️ Tec 🔨 Oficios 🌱 Tierra 🤝 Comunidad 💼 Negocios"><span class="vh-ruta-icono">🛠️</span>Técnico</button>
           <button class="vh-ruta-paso vh-ruta-univ" type="button" data-info="Tu título técnico es homologable: continúa una carrera profesional en la universidad que lo reconozca."><span class="vh-ruta-icono">🏛️</span>Universidad <em>(homologable)</em></button>
         </div>
         <p id="vh-ruta-tooltip" class="vh-ruta-tooltip"></p>
@@ -500,7 +500,10 @@ html{scroll-behavior:smooth;}
         <h3 class="vh-hero-form-titulo">Aquí empieza tu propósito, de la mano de otros propósitos.</h3>
         <p class="vh-hero-form-sub">Deja tus datos y te contactamos para tu examen de admisión.</p>
         <form id="vh-form-hero" class="vh-form">
-          <div><label for="vh-nombre-h">Nombre completo</label><input id="vh-nombre-h" autocomplete="name" name="nombre" required type="text" /></div>
+          <div class="vh-form-2col">
+            <div><label for="vh-nombre-h">Nombre</label><input id="vh-nombre-h" autocomplete="given-name" name="nombre" required type="text" /></div>
+            <div><label for="vh-apellido-h">Apellido</label><input id="vh-apellido-h" autocomplete="family-name" name="apellido" required type="text" /></div>
+          </div>
           <div><label for="vh-celular-h">Celular / WhatsApp</label><input id="vh-celular-h" autocomplete="tel" name="celular" required type="tel" /></div>
           <div><label for="vh-email-h">Correo electrónico</label><input id="vh-email-h" autocomplete="email" name="email" required type="email" /></div>
           <div>
@@ -523,13 +526,16 @@ html{scroll-behavior:smooth;}
 
   <!-- DIFERENCIADORES -->
   <section id="vh-flexibilidad" class="vh-diferenciadores">
-    <div class="vh-pills-row">
-      <span class="vh-pill">Flexibilidad horaria</span>
-      <span class="vh-pill">Flexibilidad educativa</span>
-      <span class="vh-pill">Educación con base en la experiencia</span>
-      <span class="vh-pill">Aprender haciendo</span>
-      <span class="vh-pill">Aprender jugando</span>
-      <span class="vh-pill">Virtual o presencial</span>
+    <div class="vh-wrap">
+      <h2 class="vh-diferenciadores-titulo">Educación que se adapta a tu vida, no al revés</h2>
+      <div class="vh-pills-row">
+        <span class="vh-pill">Flexibilidad horaria</span>
+        <span class="vh-pill">Flexibilidad educativa</span>
+        <span class="vh-pill">Educación con base en la experiencia</span>
+        <span class="vh-pill">Aprender haciendo</span>
+        <span class="vh-pill">Aprender jugando</span>
+        <span class="vh-pill">Virtual o presencial</span>
+      </div>
     </div>
   </section>
 
@@ -944,7 +950,10 @@ html{scroll-behavior:smooth;}
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
         <div id="vh-preseleccion" class="vh-preseleccion" role="status"></div>
-        <div><label for="vh-nombre">Nombre completo</label><input id="vh-nombre" autocomplete="name" name="nombre" required type="text" /></div>
+        <div class="vh-form-2col">
+          <div><label for="vh-nombre">Nombre</label><input id="vh-nombre" autocomplete="given-name" name="nombre" required type="text" /></div>
+          <div><label for="vh-apellido">Apellido</label><input id="vh-apellido" autocomplete="family-name" name="apellido" required type="text" /></div>
+        </div>
         <div><label for="vh-celular">Celular / WhatsApp</label><input id="vh-celular" autocomplete="tel" name="celular" required type="tel" /></div>
         <div><label for="vh-email">Correo electrónico</label><input id="vh-email" autocomplete="email" name="email" required type="email" /></div>
         <div>
